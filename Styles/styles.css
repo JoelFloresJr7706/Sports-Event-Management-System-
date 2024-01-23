@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Droid Sans Mono;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{ 
+    background: gray;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    background: black;
+    padding-top:10px;
+    min-height:70px;
+    border-bottom:royalblue 3px solid;
+}
+.highlight{
+    color: royalblue;
+}
+.container{
+    padding: 10px 10%;    
+}
+
+nav{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{ 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: ;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #4169e1;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 15%;
+}
+
+nav .fa-solid{
+    color: #d3d3d3;
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: #4169e1;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: left 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.text-info{
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    
+}
